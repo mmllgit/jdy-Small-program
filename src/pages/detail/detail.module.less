@@ -1,0 +1,255 @@
+@typeGap: 10rpx;
+@fontColor: #242323;
+.detail-container {
+  background-color: #fafafa;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .detail {
+    .detail-shop-message {
+      border-bottom: 1rpx solid @--background-color;
+      padding-bottom: @typeGap;
+      background-color: white;
+      padding: 0 3%;
+      .detail-shop-title {
+        color: @--second--theme--color;
+      }
+      .shop-detail {
+        display: flex;
+        justify-content: space-between;
+        margin-top: @typeGap;
+        .shop-image {
+          width: 40%;
+          Image {
+            width: 100%;
+            height: 200rpx;
+          }
+        }
+        .shop-info {
+          width: 56%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          View {
+            Text {
+              font-weight: 600;
+              color: @fontColor;
+            }
+          }
+          View:nth-child(3) {
+            text {
+              font-size: @--first--font-size;
+              border-radius: 5rpx;
+              padding: 5rpx;
+              background-color: @--background-color;
+            }
+          }
+        }
+      }
+    }
+    .detail-user-message {
+      margin-top: @typeGap;
+      padding: 0 3%;
+      padding-bottom: 10rpx;
+      background-color: white;
+      .detail-user-title {
+        color: @--second--theme--color;
+        margin-top: @typeGap;
+      }
+      .user-name {
+        margin-top: @typeGap;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        padding-bottom: @typeGap;
+        border-bottom: 1rpx solid @--background-color;
+        View:nth-child(2) {
+          margin-left: 1%;
+          font-weight: 600;
+          color: @fontColor;
+        }
+      }
+      .user-address {
+        margin-top: @typeGap;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        border-bottom: 1rpx solid @--background-color;
+        padding-bottom: @typeGap;
+        View:nth-child(2) {
+          margin-left: 1%;
+          font-weight: 600;
+          color: @fontColor;
+        }
+      }
+      .user-phone {
+        margin-top: @typeGap;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        View:nth-child(2) {
+          margin-left: 1%;
+          font-weight: 600;
+          color: @fontColor;
+          Text {
+            color: @--background-color;
+          }
+          Button {
+            display: inline;
+            font-size: @--first--font-size;
+            background-color: @--first--theme--color;
+            margin-left: 10rpx;
+            color: white;
+            padding: 5rpx 10rpx;
+          }
+        }
+      }
+    }
+    .detail-order-message {
+      background-color: white;
+      padding: 0 3%;
+      .order-start{
+        margin-top: @typeGap;
+        Text{
+          font-size: 28rpx;
+        }
+      }
+      .order-flag {
+        margin-top: @typeGap;
+        display: flex;
+        color: @--second--theme--color;
+        View:nth-child(2) {
+          background-color: @--first--theme--color;
+          color: white;
+          padding: 5rpx 10rpx;
+          border-radius: 10rpx;
+          font-size: @--first--font-size;
+          margin-left: @typeGap;
+        }
+      }
+      .order-remark {
+        margin-top: @typeGap;
+        Text {
+          color: rgb(230, 18, 18);
+          font-size: 28rpx;
+        }
+      }
+      .user-remark-container {
+        margin: calc(2 * @typeGap) 0;
+        display: flex;
+        align-items: center;
+        .remark-title{
+
+        }
+        .user-remark {
+          flex: 1;
+          .user-input {
+            display: flex;
+            Input {
+              flex: 1;
+              border-bottom: 1px solid black;
+            }
+          }
+          .user-text {
+            display: flex;
+            align-items: center;
+            View:nth-child(1){
+              flex: 1;
+              word-break: break-all;
+            }
+          }
+          .remark-button {
+            background-color: @--first--theme--color;
+            color: white;
+            padding: 5rpx 10rpx;
+            border-radius: 10rpx;
+            font-size: @--first--font-size;
+            margin-left: @typeGap;
+          }
+        }
+      }
+      .order-info {
+        margin-top: @typeGap;
+        display: flex;
+        justify-content: space-between;
+        color: @--second--theme--color;
+        View:nth-child(2) {
+          background-color: #97d9f8;
+          padding: 5rpx 10rpx;
+          border-radius: 20rpx;
+          font-size: @--first--font-size;
+        }
+      }
+    }
+    .detail-buttons {
+      margin-top: @typeGap;
+      display: flex;
+      width: 100%;
+      margin-top: calc(@typeGap * 3);
+      Button {
+        width: 50%;
+      }
+      Button:nth-child(1) {
+        background-color: white;
+      }
+      Button:nth-child(2) {
+        background-color: @--first--theme--color;
+        color: white;
+      }
+    }
+    .done-order {
+      padding: 0 3%;
+      margin-top: calc(2 * @typeGap);
+      .done-progress {
+        background-color: white;
+        View {
+          padding: 0 3%;
+        }
+        View:nth-child(1) {
+          padding: 0;
+          Text {
+            background-color: @--background-color;
+          }
+        }
+        View:nth-child(3) {
+          display: flex;
+          Image {
+            display: block;
+            width: 30%;
+            height: 200rpx;
+            margin-right: 3%;
+          }
+        }
+      }
+      .after-image {
+        padding: 0 3%;
+        margin-top: @typeGap;
+        background-color: white;
+        padding-bottom: calc(8 * @typeGap);
+        View:nth-child(2) {
+          display: flex;
+          Image {
+            display: block;
+            width: 30%;
+            height: 200rpx;
+            margin-right: 3%;
+          }
+        }
+        .user-sign {
+          width: 100%;
+          height: 200rpx;
+        }
+      }
+    }
+    .cancel-reason {
+      margin-top: calc(@typeGap * 2);
+      background-color: white;
+      padding: 30rpx 3%;
+      View:nth-child(2) {
+        padding: 0 3%;
+        color: @--warning--color;
+        font-size: @--second--font-size;
+      }
+    }
+  }
+}

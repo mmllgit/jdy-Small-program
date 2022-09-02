@@ -1,0 +1,64 @@
+@heightGap:15rpx;
+.register-container{
+    .register-title{
+        color: @--second--theme--color;
+        font-size: @--second--font-size;
+        width: 100%;
+        text-align: center;
+    }
+    .register-form{
+        width: 90%;
+        margin: 0 auto;
+        .register-input{
+            margin-top: @heightGap;
+            .input-title{
+                Text{
+                    color: red;
+                }
+            }
+            Input{
+                color: @--second--theme--color;
+                border-bottom: 1rpx solid @--second--theme--color;
+            }
+        }
+        .register-region{
+            margin-top: @heightGap;
+            View{
+                Text{
+                    color: red;
+                }
+            }
+            Picker{
+                color: @--second--theme--color;
+                border-bottom: 1rpx solid @--second--theme--color;
+                Text{
+                    color: @--second--theme--color;
+                }
+            }
+        }
+        .register-photo{
+            margin-top: @heightGap;
+            .register-card{
+                Text{
+                    color: red;
+                }
+            }
+            .register-image{
+                margin-top: @heightGap;
+                .card-title{
+                    color: @--second--theme--color;
+                    margin-left: @heightGap;
+                    margin-bottom: @heightGap;
+                }
+            }
+        }
+        .btn{
+            width: 80%;
+            height: 80rpx;
+            background-color: @--first--theme--color;
+            border-radius: 20rpx;
+            margin-top: calc(10 * @heightGap);
+            color: white;
+        }
+    }
+}

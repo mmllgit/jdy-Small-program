@@ -1,0 +1,185 @@
+@itemGap:15rpx;
+.index-checking{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: #F2F2F2;
+    animation-duration: 1s;
+    animation-name: tabsOut;
+    .checking-container{
+        border: 1rpx solid black;
+        padding: 20rpx 30rpx;
+        width: 70%;
+        height: 27%;
+        margin: 0 auto;
+        margin-top: 30%;
+        font-size: @--third--font-size;
+        background-color: white;
+        View:nth-child(1){
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .btn{
+        width: 40%;
+        margin-top: 8%;
+        background-color: @--first--theme--color;
+        color: white;
+    }
+}
+
+.index-empty{
+    width: 100%;
+    text-align: center;
+    margin-top: 40%;
+    line-height: 100rpx;
+    font-size: @--second--font-size;
+    animation-duration: 1s;
+    animation-name: tabsOut;
+}
+
+.index-container{
+  animation-duration: 1s;
+  animation-name: tabsOut;
+    .index-title{
+        display: flex;
+        View:nth-child(1){
+            width: 30%;
+            font-size: @--third--font-size;
+            margin-left: 3%;
+            Text{
+                font-size: 24rpx;
+            }
+        }
+        View:nth-child(2){
+            width: 30%;
+            text-align: center;
+            margin-left: 2%;
+        }
+    }
+    .order-list-title{
+        width: 100%;
+        text-align: center;
+        margin-top: 20rpx;
+        font-size: @--second--font-size;
+    }
+    .index-tabs-container{
+        background-color: #F2F2F2;
+        margin: 3% 0;
+        padding: 1% 0 7% 0;
+        .index-order-list{
+            margin-top: 3%;
+            .index-item-list{
+                width: 90%;
+                margin: 0 auto;
+                border: 1rpx solid @--third--theme--color;
+                background-color: white;
+                border-radius: 10rpx;
+                margin-top: calc(2 * @itemGap);
+                .item-message{
+                    .item-type-money{
+                        width: 90%;
+                        display: flex;
+                        margin: 0 auto;
+                        margin-top: @itemGap;
+                        justify-content: space-between;
+                        View:nth-child(1){
+                            padding: 10rpx 20rpx;
+                            font-size: @--first--font-size;
+                            border-radius: 10rpx;
+                        }
+                        View:nth-child(2){
+                            color: rgb(230, 18, 18);
+                            font-weight: 600;
+                        }
+                    }
+                    .item-address{
+                        margin-top: @itemGap;
+                        display: flex;
+                        align-items: baseline;
+                        width: 94%;
+                        View{
+                            margin-left: 5%;
+                        }
+                        View:nth-child(2){
+                            margin-left: 1%;
+                            font-weight: 600;
+                            display: -webkit-box;
+                            overflow: hidden;
+                            -webkit-box-orient: vertical;
+                            line-clamp: 1;
+                            -webkit-line-clamp: 1;
+                        }
+                    }
+                    .item-user-message{
+                        display: flex;
+                        margin-top: @itemGap;
+                        align-items: baseline;
+                        View:nth-child(1){
+                            margin-left: 5%;
+                        }
+                        View:nth-child(2){
+                            margin-left: 1%;
+                        }
+                        View{
+                            margin-left: 14%;
+                        }
+                    }
+                    .item-lock-message{
+                        display: flex;
+                        margin-top: @itemGap;
+                        align-items: baseline;
+                        View:nth-child(1){
+                            margin-left: 5%;
+                        }
+                        View:nth-child(2){
+                            margin-left: 1%;
+                        }
+                        View:nth-child(3){
+                            margin-left: 1%;
+                            font-size: @--first--font-size;
+                            background-color: @--background-color;
+                            padding: 5rpx;
+                            border-radius: 10rpx;
+                        }
+                    }
+                }
+            }
+            .index-item-buttons{
+                margin-top: @itemGap;
+                .button-container{
+                    width: 94%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1rpx solid #bdb6b6;
+                    Button{
+                        width: 40%;
+                        margin:10rpx 0;
+                        line-height: 60rpx;
+                    }
+                    Button:nth-child(1){
+                        background: white;
+                        font-size: @--second--font-size;
+                        border: 1rpx solid @--third--theme--color;
+                    }
+                    Button:nth-child(2){
+                        background: @--first--theme--color;
+                        color: white;
+                        font-size: @--second--font-size;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes tabsOut{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
